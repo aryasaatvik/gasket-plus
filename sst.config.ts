@@ -4,11 +4,13 @@ export default $config({
   app(input) {
     return {
       name: "gasket-nextjs",
-      removal: input?.stage === "production" ? "retain" : "remove",
+      removal: input?.stage === "prod" ? "retain" : "remove",
       home: "aws",
     };
   },
   async run() {
-    new sst.aws.Nextjs("GasketNextJS");
+    new sst.aws.Nextjs("GasketNextJS", {
+      buildCommand: "pnpm run build:open-next"
+    });
   },
 });

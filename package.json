@@ -4,9 +4,12 @@
   "description": "A basic gasket app",
   "scripts": {
     "build": "next build",
+    "build:open-next": "open-next build",
     "local": "next dev",
     "prebuild": "node gasket.js build",
-    "preview": "npm run build && npm run start",
+    "preview": "pnpm run build && pnpm run start",
+    "dev": "AWS_PROFILE=aryash sst dev local",
+    "deploy:prod": "AWS_PROFILE=aryash sst deploy --stage prod",
     "start": "next start"
   },
   "dependencies": {
