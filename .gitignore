@@ -29,3 +29,9 @@ gasket.config.local.js*
 .docs
 
 
+
+# sst
+.sst
+
+# open-next
+.open-next
