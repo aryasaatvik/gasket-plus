@@ -24,10 +24,12 @@ export default makeGasket({
 		pluginIntl
   ],
   intl: {
+    localesDir: 'locales',
     locales: [
       'en-US',
       'fr-FR',
     ],
+    nextRouting: false
   },
   filename: import.meta.filename,
 });
