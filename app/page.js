@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import GasketEmblem from '@gasket/assets/react/gasket-emblem.js';
+import gasket from '../gasket';
 
 export const metadata = {
   title: 'gasket-nextjs',
@@ -12,6 +13,7 @@ const pageStyle = { textAlign: 'center' };
 const logoStyle = { width: '250px', height: '250px' };
 
 const IndexPage = () => (
+  gasket.logger.info('Rendering IndexPage'),
   <div style={ pageStyle }>
     <GasketEmblem style={ logoStyle }/>
     <h1>Welcome to Gasket!</h1>
