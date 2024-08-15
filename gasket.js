@@ -24,7 +24,8 @@ export default makeGasket({
 		pluginIntl
   ],
   intl: {
-    localesDir: 'public/locales',
+    localesDir: 'locales',
+    defaultLocale: 'en-US',
     locales: [
       'en-US',
       'fr-FR',
