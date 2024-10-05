@@ -1,0 +1,44 @@
+diff --git a/lib/cli.js b/lib/cli.js
+index 63f46b5dcebda130e21dbe64c0547e96cadb0111..0a05c11ecb7fce274507429db148dee4ef0844bd 100644
+--- a/lib/cli.js
++++ b/lib/cli.js
+@@ -1,8 +1,7 @@
+ import { Command } from 'commander';
+ import { logo } from './utils/index.js';
+-import { createRequire } from 'module';
+-const require = createRequire(import.meta.url);
+-const { version } = require('../package.json');
++import pkg from '../package.json' assert { type: 'json' };
++const { version } = pkg;
+ const program = new Command();
+ 
+ // Create Gasket CLI
+diff --git a/lib/create.js b/lib/create.js
+index 4ab64fd7c4b0349c0edeb6d4cfd41a9bd5fd5f61..263347c111c4654f92bfce575582a29341717a1a 100644
+--- a/lib/create.js
++++ b/lib/create.js
+@@ -1,6 +1,5 @@
+-import { createRequire } from 'module';
+-const require = createRequire(import.meta.url);
+-const { name, version } = require('../package.json');
++import pkg from '../package.json' assert { type: 'json' };
++const { name, version } = pkg;
+ 
+ /** @type {import('@gasket/core').HookHandler<'create'>} */
+ export default function create(gasket, { pkg, gasketConfig }) {
+diff --git a/lib/index.js b/lib/index.js
+index 61f5103428815805fecbec98cde0f2688676fb1b..8d43070b4d669202fe065935be91ebe7214b54fc 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -1,9 +1,8 @@
+ import create from './create.js';
+ import ready from './ready.js';
+ import commands from './commands.js';
+-import { createRequire } from 'module';
+-const require = createRequire(import.meta.url);
+-const { name, version, description } = require('../package.json');
++import pkg from '../package.json' assert { type: 'json' };
++const { name, version, description } = pkg;
+ 
+ /** @type {import('@gasket/core').Plugin} */
+ export default {
