@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'A basic gasket app'
 };
 
-const pageStyle: CSSProperties = { textAlign: 'center' };
+const pageStyle: CSSProperties = { textAlign: 'center', position: 'relative' };
 const logoStyle: CSSProperties = { width: '250px', height: '250px' };
 
 export default async function Page({ params }) {
@@ -17,11 +17,13 @@ export default async function Page({ params }) {
   console.log('localeData', localeData);
   gasket.logger.info('Rendering IndexPage');
   return (
-    <div style={ pageStyle }>
-      <GasketEmblem style={ logoStyle }/>
+    <div style={pageStyle}>
+      <GasketEmblem style={logoStyle} />
       <h1>{localeData.gasket_welcome}</h1>
       <p>{localeData.gasket_edit_page}</p>
-      <p><a href='https://gasket.dev'>{localeData.gasket_learn}</a></p>
+      <p>
+        <a href='https://gasket.dev'>{localeData.gasket_learn}</a>
+      </p>
     </div>
   );
 }
