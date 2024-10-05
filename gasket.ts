@@ -10,6 +10,7 @@ import pluginCommand from '@gasket/plugin-command';
 import pluginDocs from '@gasket/plugin-docs';
 import pluginDocusaurus from '@gasket/plugin-docusaurus';
 import pluginIntl from '@gasket/plugin-intl';
+import pluginCloudflareImages from './plugins/cloudflare-images';
 
 const config: GasketConfigDefinition = {
   plugins: [
@@ -22,7 +23,8 @@ const config: GasketConfigDefinition = {
     pluginCommand,
     pluginDocs,
     pluginDocusaurus,
-    pluginIntl
+    pluginIntl,
+    pluginCloudflareImages
   ],
   intl: {
     localesDir: 'locales',
