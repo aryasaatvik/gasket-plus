@@ -1,8 +1,8 @@
-import { NextResponse } from 'next/server'
+import { NextResponse, type NextRequest } from 'next/server'
 // TODO: gasket doesn't work in edge runtime because commander uses nodejs modules
 // import gasket from './gasket'
 
-export async function middleware(request) {
+export async function middleware(request: NextRequest) {
   const locale = request.headers.get('accept-language').split(',')[0]
   const url = new URL(request.url)
   if (url.pathname === '/') {

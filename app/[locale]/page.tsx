@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { type CSSProperties } from 'react';
 import GasketEmblem from '@gasket/assets/react/gasket-emblem.js';
 import gasket from '../../gasket';
 import { getLocaleData } from '../actions';
+import { type Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'gasket-nextjs',
-  description: 'A basic gasket app',
-  charset: 'UTF-8'
+  description: 'A basic gasket app'
 };
 
-const pageStyle = { textAlign: 'center' };
-const logoStyle = { width: '250px', height: '250px' };
+const pageStyle: CSSProperties = { textAlign: 'center' };
+const logoStyle: CSSProperties = { width: '250px', height: '250px' };
 
 export default async function Page({ params }) {
   const localeData = await getLocaleData(params.locale);

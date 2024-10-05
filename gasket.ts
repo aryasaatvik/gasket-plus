@@ -1,3 +1,4 @@
+import type { GasketConfigDefinition } from '@gasket/core';
 import { makeGasket } from '@gasket/core';
 import pluginHttps from '@gasket/plugin-https';
 import pluginNextjs from '@gasket/plugin-nextjs';
@@ -10,18 +11,18 @@ import pluginDocs from '@gasket/plugin-docs';
 import pluginDocusaurus from '@gasket/plugin-docusaurus';
 import pluginIntl from '@gasket/plugin-intl';
 
-export default makeGasket({
+const config: GasketConfigDefinition = {
   plugins: [
-		pluginHttps,
-		pluginNextjs,
-		pluginWebpack,
-		pluginWinston,
-		pluginLogger,
-		pluginMetadata,
-		pluginCommand,
-		pluginDocs,
-		pluginDocusaurus,
-		pluginIntl
+    pluginHttps,
+    pluginNextjs,
+    pluginWebpack,
+    pluginWinston,
+    pluginLogger,
+    pluginMetadata,
+    pluginCommand,
+    pluginDocs,
+    pluginDocusaurus,
+    pluginIntl
   ],
   intl: {
     localesDir: 'locales',
@@ -30,7 +31,9 @@ export default makeGasket({
       'en-US',
       'fr-FR',
     ],
+    managerFilename: 'intl.ts',
     nextRouting: false
   },
-  filename: import.meta.filename,
-});
+};
+
+export default makeGasket(config);

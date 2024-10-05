@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import gasket from '../gasket'
 import intlManager from '../intl'
 
-export async function getLocaleData(locale) {
+export async function getLocaleData(locale: string) {
   if (!intlManager.managedLocales.includes(locale)) {
     gasket.logger.error(`getLocaleData: ${locale} locale not found`)
     const resolvedLocale = intlManager.resolveLocale(locale)

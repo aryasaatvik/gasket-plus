@@ -1,7 +1,8 @@
 /* -- GENERATED FILE - DO NOT EDIT -- */
 import { makeIntlManager } from '@gasket/intl';
+import type { LocaleManifest } from '@gasket/intl';
 
-const manifest = {
+const manifest: LocaleManifest = {
   defaultLocaleFilePath: 'locales',
   staticLocaleFilePaths: [
     'locales'
