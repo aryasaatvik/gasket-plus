@@ -1,0 +1,32 @@
+{
+  "name": "gasket-plugin-next-image",
+  "version": "0.1.0",
+  "private": true,
+  "description": "gasket plugin to add next/image optimization with cloudflare",
+  "type": "module",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "keywords": [
+    "gasket",
+    "plugin",
+    "next",
+    "image",
+    "cloudflare"
+  ],
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "@gasket/core": "^7.0.0",
+    "@gasket/plugin-nextjs": "^7.0.0",
+    "next": "^14.0.0"
+  },
+  "devDependencies": {
+    "@gasket/core": "^7.0.0",
+    "@gasket/plugin-nextjs": "^7.0.0",
+    "next": "^14.0.0"
+  }
+}
