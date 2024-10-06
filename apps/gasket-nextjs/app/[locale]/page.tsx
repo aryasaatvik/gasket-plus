@@ -3,6 +3,7 @@ import GasketEmblem from '@gasket/assets/react/gasket-emblem.js';
 import gasket from '../../gasket';
 import { getLocaleData } from '../actions';
 import { type Metadata } from 'next';
+import { GasketScene } from 'components/gasket';
 
 export const metadata: Metadata = {
   title: 'gasket-nextjs',
@@ -18,7 +19,9 @@ export default async function Page({ params }) {
   gasket.logger.info('Rendering IndexPage');
   return (
     <div style={pageStyle}>
-      <GasketEmblem style={logoStyle} />
+      <div style={{ width: '100vw', height: '60vh' }}>
+        <GasketScene />
+      </div>
       <h1>{localeData.gasket_welcome}</h1>
       <p>{localeData.gasket_edit_page}</p>
       <p>

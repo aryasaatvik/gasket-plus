@@ -15,6 +15,7 @@ export default $config({
   },
   async run() {
     new sst.aws.Nextjs("GasketNextJS", {
+      path: "apps/gasket-nextjs",
       buildCommand: "pnpm run build:open-next",
       domain: {
         name: "gasket.arya.sh",
