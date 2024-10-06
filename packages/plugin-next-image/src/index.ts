@@ -22,7 +22,7 @@ const pluginNextImage: Plugin = {
 
       const imageProvider = gasket.config.nextImage.provider;
       const root = gasket.config.root;
-      const loaderPath = path.relative(root, new URL(`./${imageProvider}-loader`, import.meta.url).pathname);
+      const loaderPath = path.relative(root, new URL(`./${imageProvider}-loader.js`, import.meta.url).pathname);
       nextConfig.images = {
         loader: 'custom',
         loaderFile: loaderPath,
