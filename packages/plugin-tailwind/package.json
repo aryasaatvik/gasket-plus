@@ -1,0 +1,31 @@
+{
+  "name": "gasket-plugin-tailwind",
+  "version": "0.1.0",
+  "description": "Adds Tailwind CSS support to your Gasket application",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "gasket",
+    "plugin",
+    "tailwindcss"
+  ],
+  "author": "Saatvik Arya <aryasaatvik@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@gasket/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@gasket/core": "^7.0.0",
+    "create-gasket-app": "^7.0.2",
+    "typescript": "^5.4.5",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.0"
+  }
+}
