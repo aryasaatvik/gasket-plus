@@ -1,11 +1,11 @@
-# @gasket/plugin-tailwindcss
+# gasket-plugin-tailwind
 
 This plugin adds Tailwind CSS support to your Gasket application.
 
 ## Installation
 
 ```
-npm i @gasket/plugin-tailwindcss
+npm i gasket-plugin-tailwind
 ```
 
 Update your `gasket` file plugin configuration:
@@ -13,11 +13,11 @@ Update your `gasket` file plugin configuration:
 ```diff
 // gasket.js
 
-+ import pluginTailwindcss from '@gasket/plugin-tailwindcss';
++ import pluginTailwind from 'gasket-plugin-tailwind';
 
 export default makeGasket({
   plugins: [
-+   pluginTailwindcss
++   pluginTailwind
   ]
 });
 ```
@@ -31,7 +31,7 @@ export default makeGasket({
   plugins: [
     pluginTailwindcss
   ],
-  tailwindcss: {
+  tailwindConfig: {
     // Your Tailwind CSS config options here
   }
 });

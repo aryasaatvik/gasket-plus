@@ -10,7 +10,11 @@
     "skipLibCheck": true,
     "rootDir": "src",
     "declaration": true,
-    "outDir": "./lib"
+    "outDir": "./lib",
+    "types": [
+      "@gasket/plugin-typescript",
+      "@gasket/plugin-nextjs"
+    ]
   },
   "include": [
     "src/**/*.ts",

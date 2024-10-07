@@ -50,7 +50,7 @@ importers:
         version: 7.0.1
       '@gasket/plugin-nextjs':
         specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gasket/plugin-webpack':
         specifier: ^7.0.1
         version: 7.0.1
@@ -129,7 +129,7 @@ importers:
         version: 7.0.1
       '@gasket/plugin-nextjs':
         specifier: ^7.0.0
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: ^14.0.0
         version: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -139,9 +139,12 @@ importers:
       '@gasket/core':
         specifier: ^7.0.0
         version: 7.0.1
-      autoprefixer:
-        specifier: ^10.4.14
-        version: 10.4.20(postcss@8.4.47)
+      '@gasket/plugin-nextjs':
+        specifier: ^7.0.1
+        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gasket/plugin-typescript':
+        specifier: ^7.0.1
+        version: 7.0.1
       create-gasket-app:
         specifier: ^7.0.2
         version: 7.0.2
@@ -1641,6 +1644,9 @@ packages:
       next: ^14
       react: ^18
       react-dom: ^18
+
+  '@gasket/plugin-typescript@7.0.1':
+    resolution: {integrity: sha512-kgfoO0VGp7UjHMBPOLfmBolgy91962kiNuv4iqP5nfIA0Z6jaF+a9uVwBdzlnB20u/+/ehH/gDD8Joaj4mLFxw==}
 
   '@gasket/plugin-webpack@7.0.1':
     resolution: {integrity: sha512-XIdtdQgQa8LKsKK7La6XlbZEQSnZSGl8taHUKJCwrUhwDmQUq2tfUBP39bPqIVFCYFskfoOvwHj0JubtdFmhPw==}
@@ -9314,13 +9320,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-nextjs@7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gasket/plugin-nextjs@7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gasket/plugin-webpack': 7.0.1
       fastify: 4.28.1
       next: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+
+  '@gasket/plugin-typescript@7.0.1': {}
 
   '@gasket/plugin-webpack@7.0.1': {}
 
