@@ -13,8 +13,7 @@
     "outDir": "./lib"
   },
   "include": [
-    "./**/*.ts",
-    "./**/*.tsx"
+    "src/**/*.ts",
   ],
   "exclude": [
     "generator",
