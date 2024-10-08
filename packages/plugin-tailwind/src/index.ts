@@ -1,14 +1,18 @@
 import type { Plugin } from '@gasket/core';
-import pkg from '../package.json' assert { type: 'json' };
 import type { CreateContext } from 'create-gasket-app';
 import type { Gasket, GasketConfig } from '@gasket/core';
 import type { Config as TailwindConfig } from "tailwindcss";
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { readFileSync } from 'node:fs';
+
+const __dirname = fileURLToPath(import.meta.url);
+const pkg = readFileSync(path.join(__dirname, '..', '..', 'package.json'), 'utf8');
+const { name, version, description, devDependencies } = JSON.parse(pkg);
 
 declare module '@gasket/core' {
   interface GasketConfig {
-    tailwindConfig: TailwindConfig;
+    tailwindConfig?: Partial<TailwindConfig>;
   }
 
   interface GasketActions {
@@ -33,8 +37,6 @@ const defaultTailwindConfig: TailwindConfig = {
   plugins: [],
 };
 
-const { name, version, description, devDependencies } = pkg;
-
 const pluginTailwind: Plugin = {
   name,
   version,
@@ -55,7 +57,6 @@ const pluginTailwind: Plugin = {
           postcss: devDependencies.postcss
         });
 
-        const __dirname = fileURLToPath(import.meta.url);
         const generatorDir = path.join(__dirname, '..', '..', 'generator');
 
         files.add(
@@ -76,7 +77,8 @@ const pluginTailwind: Plugin = {
   },
   actions: {
     getTailwindConfig(gasket: Gasket) {
-      return gasket.config.tailwindConfig;
+      const config = gasket.config.tailwindConfig || defaultTailwindConfig;
+      return config as TailwindConfig;
     }
   }
 }
