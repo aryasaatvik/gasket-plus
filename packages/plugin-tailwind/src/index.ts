@@ -2,13 +2,9 @@ import type { Plugin } from '@gasket/core';
 import type { CreateContext } from 'create-gasket-app';
 import type { Gasket, GasketConfig } from '@gasket/core';
 import type { Config as TailwindConfig } from "tailwindcss";
-import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { readFileSync } from 'node:fs';
-
-const __dirname = fileURLToPath(import.meta.url);
-const pkg = readFileSync(path.join(__dirname, '..', '..', 'package.json'), 'utf8');
-const { name, version, description, devDependencies } = JSON.parse(pkg);
+import pkg from '../package.json' assert { type: 'json' };
+const { name, version, description, devDependencies } = pkg;
 
 declare module '@gasket/core' {
   interface GasketConfig {
