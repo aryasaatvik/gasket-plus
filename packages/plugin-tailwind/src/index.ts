@@ -47,6 +47,9 @@ const pluginTailwind: Plugin = {
       },
       handler: async function create(gasket: Gasket, context: CreateContext) {
         const { files, pkg, typescript } = context;
+        pkg.add('dependencies', {
+          [name]: `^${version}`,
+        })
         pkg.add('devDependencies', {
           tailwindcss: devDependencies.tailwindcss,
           postcss: devDependencies.postcss
@@ -55,17 +58,11 @@ const pluginTailwind: Plugin = {
         const __dirname = fileURLToPath(import.meta.url);
         const generatorDir = path.join(__dirname, '..', '..', 'generator');
 
-        if (typescript) {
-          files.add(
-            `${generatorDir}/*`,
-            '!tailwind.config.js'
-          );
-        } else {
-          files.add(
-            `${generatorDir}/**/*`,
-            '!tailwind.config.js'
-          );
-        }
+        files.add(
+          `${generatorDir}/**/*`,
+        );
+
+        context.gasketConfig.addPlugin('pluginTailwind', 'gasket-plugin-tailwind');
       }
     },
     configure(gasket: Gasket, baseConfig: GasketConfig) {
