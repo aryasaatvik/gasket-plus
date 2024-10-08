@@ -13,7 +13,8 @@
       "esnext"
     ],
     "types": [
-      "node"
+      "node",
+      "gasket-plugin-tailwind"
     ],
     "baseUrl": ".",
     "paths": {
@@ -29,7 +30,7 @@
       {
         "name": "next"
       }
-    ]
+    ],
   },
   "exclude": [
     "node_modules",

@@ -11,6 +11,7 @@ import pluginDocs from '@gasket/plugin-docs';
 import pluginDocusaurus from '@gasket/plugin-docusaurus';
 import pluginIntl from '@gasket/plugin-intl';
 import pluginNextImages from 'gasket-plugin-next-image';
+import pluginTailwind from 'gasket-plugin-tailwind';
 
 const config: GasketConfigDefinition = {
   plugins: [
@@ -24,7 +25,8 @@ const config: GasketConfigDefinition = {
     pluginDocs,
     pluginDocusaurus,
     pluginIntl,
-    pluginNextImages
+    pluginNextImages,
+    pluginTailwind
   ],
   nextImage: {
     provider: 'cloudflare'
