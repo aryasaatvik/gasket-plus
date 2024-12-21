@@ -20,7 +20,7 @@ export default function Page() {
     <div className="flex flex-col justify-center items-center h-screen">
       <h1>Images</h1>
       {/* a grid of images */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid overflow-y-auto grid-cols-1 gap-4 md:grid-cols-3">
         {images.map((image) => (
           <div className="relative w-64 h-64">
             <Image

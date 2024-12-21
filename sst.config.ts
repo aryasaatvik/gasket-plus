@@ -20,6 +20,9 @@ export default $config({
       domain: {
         name: "gasket.arya.sh",
         dns: sst.cloudflare.dns()
+      },
+      environment: {
+        NEXT_PUBLIC_URL: 'https://gasket.arya.sh'
       }
     });
   },

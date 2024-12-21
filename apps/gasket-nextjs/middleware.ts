@@ -9,6 +9,18 @@ export async function middleware(request: NextRequest) {
     console.log('redirecting to /%s', locale)
     return NextResponse.redirect(new URL(`/${locale}`, url))
   }
+  if (url.pathname.includes('/protected')) {
+    const res = await fetch(new URL('/api/auth/verify', url), {
+      headers: {
+        cookie: request.headers.get('cookie') || ''
+      }
+    });
+    const { verified } = await res.json();
+    console.log('verified', verified);
+    if (!verified || verified.err) {
+      return NextResponse.redirect(new URL('/api/auth/login', request.url));
+    }
+  }
   return NextResponse.next()
 }
 

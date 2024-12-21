@@ -10,7 +10,9 @@
     "allowImportingTsExtensions": true,
     "outDir": "dist",
     "lib": [
-      "esnext"
+      "esnext",
+      "dom",
+      "dom.iterable"
     ],
     "types": [
       "node",

@@ -1,0 +1,65 @@
+{
+  "name": "gasket-plugin-auth",
+  "version": "0.1.0",
+  "author": {
+    "name": "Saatvik Arya",
+    "email": "aryasaatvik@gmail.com",
+    "url": "https://github.com/aryasaatvik"
+  },
+  "description": "gasket plugin for oauth",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@openauthjs/openauth": "latest",
+    "cookie-parser": "^1.4.6",
+    "valibot": "1.0.0-beta.9"
+  },
+  "peerDependencies": {
+    "@gasket/core": "^7.0.0",
+    "@gasket/plugin-express": "^7.0.0",
+    "@gasket/plugin-nextjs": "^7.0.0",
+    "express": "^4.17.1",
+    "next": "^14.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@gasket/plugin-express": {
+      "optional": true
+    },
+    "express": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@gasket/core": "^7.0.1",
+    "@gasket/plugin-express": "^7.1.2",
+    "@gasket/plugin-logger": "^7.0.1",
+    "@gasket/plugin-nextjs": "^7.0.1",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/react": "^18.0.0",
+    "next": "^14.2.14",
+    "react": "^18.2.0",
+    "typescript": "^5.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryasaatvik/gasket-plus.git"
+  },
+  "license": "MIT"
+}
