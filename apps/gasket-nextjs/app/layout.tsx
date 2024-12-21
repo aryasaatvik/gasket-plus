@@ -3,6 +3,7 @@ import gasket from '../gasket';
 import { withGasketData } from '@gasket/nextjs/layout';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css';
+import { AuthProvider } from 'gasket-plugin-auth/auth-context';
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   gasket.logger.info('Rendering RootLayout');
@@ -12,11 +13,13 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={GeistMono.className}>
-        <div className='overflow-hidden relative w-full h-full'>
-          {children}
-        </div>
-        <footer className='absolute bottom-0 w-full text-center'>
-        </footer>
+        <AuthProvider>
+          <div className='overflow-hidden relative w-full h-full'>
+            {children}
+          </div>
+          <footer className='absolute bottom-0 w-full text-center'>
+          </footer>
+        </AuthProvider>
       </body>
     </html>
   );

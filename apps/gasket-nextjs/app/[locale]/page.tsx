@@ -3,6 +3,7 @@ import gasket from '../../gasket';
 import { getLocaleData } from '../actions';
 import { type Metadata } from 'next';
 import { GasketScene } from 'components/gasket';
+import { AuthButton } from 'components/auth-button';
 
 export const metadata: Metadata = {
   title: 'gasket-nextjs',
@@ -20,6 +21,7 @@ export default async function Page({ params }) {
       </div>
       <h1 className='text-4xl font-bold'>{localeData.gasket_welcome}</h1>
       <p>{localeData.gasket_edit_page}</p>
+      <AuthButton />
       <a className='text-blue-500 underline' href='https://gasket.dev'>{localeData.gasket_learn}</a>
     </div>
   );
