@@ -16,14 +16,12 @@ export async function loginHandler(gasket: Gasket, request: NextRequest) {
     return NextResponse.json({ error: 'gasket.config.authClient is not set' }, { status: 400 });
   }
 
-  const url = new URL(request.url);
-
-  const { url: authUrl } = await client.authorize(
-    `${url.origin}/api/auth/callback`,
+  const { url } = await client.authorize(
+    `${process.env.NEXT_PUBLIC_URL}/api/auth/callback`,
     'code'
   );
 
-  return NextResponse.redirect(authUrl);
+  return NextResponse.redirect(url);
 };
 
 export async function callbackHandler(gasket: Gasket, request: NextRequest) {
