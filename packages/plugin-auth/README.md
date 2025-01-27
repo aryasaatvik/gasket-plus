@@ -15,7 +15,7 @@ Add the plugin to your gasket.js:
 ```js
 import { makeGasket } from '@gasket/core';
 import pluginAuth from 'gasket-plugin-auth';
-import { createSubjects } from "@openauthjs/openauth";
+import { createSubjects } from "@openauthjs/openauth/subject";
 import { object, string } from "valibot";
 
 const subjects = createSubjects({
