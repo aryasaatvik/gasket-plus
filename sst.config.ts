@@ -3,7 +3,7 @@ export default $config({
   app(input) {
     return {
       name: "gasket-nextjs",
-      removal: input?.stage === "prod" ? "retain" : "remove",
+      removal: input?.stage === "production" ? "retain" : "remove",
       home: "aws",
       providers: {
         cloudflare: {
@@ -22,7 +22,16 @@ export default $config({
         dns: sst.cloudflare.dns()
       },
       environment: {
+        GASKET_ENV: "production",
         NEXT_PUBLIC_URL: 'https://gasket.arya.sh'
+      },
+      transform: {
+        server: {
+          runtime: "nodejs22.x"
+        },
+        imageOptimization: {
+          runtime: "nodejs22.x"
+        }
       }
     });
   },

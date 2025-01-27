@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "pnpm run dev",
-    "deploy:prod": "sst deploy --stage prod"
+    "deploy:prod": "sst deploy --stage production"
   },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "pnpm": {
     "patchedDependencies": {
-      "@gasket/plugin-command@7.0.1": "patches/@gasket__plugin-command@7.0.1.patch"
+      "@gasket/plugin-command": "patches/@gasket__plugin-command.patch"
     }
   }
 }
