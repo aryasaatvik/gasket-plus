@@ -1,0 +1,43 @@
+{
+  "name": "hono-api",
+  "version": "0.0.0",
+  "description": "A basic gasket app",
+  "scripts": {
+    "docs": "tsx gasket.ts docs",
+    "prebuild": "tsx gasket.ts build",
+    "build": "tsc",
+    "preview": "npm run build && npm run start",
+    "start": "node dist/server.js",
+    "local": "tsx watch server.ts"
+  },
+  "dependencies": {
+    "@gasket/core": "^7.2.0",
+    "@gasket/plugin-command": "^7.2.0",
+    "@gasket/plugin-docs": "^7.2.0",
+    "@gasket/plugin-docusaurus": "^7.2.0",
+    "@gasket/plugin-express": "^7.2.0",
+    "@gasket/plugin-https": "^7.2.0",
+    "@gasket/plugin-logger": "^7.2.0",
+    "@gasket/plugin-metadata": "^7.2.0",
+    "@gasket/plugin-swagger": "^7.2.0",
+    "@gasket/plugin-winston": "^7.2.0",
+    "@gasket/request": "^7.2.0",
+    "@gasket/utils": "^7.2.0",
+    "gasket-plugin-hono": "workspace:*",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "ajv": "^8.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "search-insights": "^2.13.0",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  },
+  "type": "module",
+  "eslintIgnore": [
+    "dist"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "info": {
+    "title": "hono-api",
+    "version": "0.0.0"
+  },
+  "swagger": "2.0",
+  "paths": {},
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
