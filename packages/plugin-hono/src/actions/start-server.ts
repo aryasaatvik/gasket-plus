@@ -32,11 +32,13 @@ export default async function startServer(gasket: Gasket) {
         app.onError(errorMiddleware);
       }
     });
-
+  
   console.log(`starting server on port ${config.port || 3000}`);
   serve({
     fetch: app.fetch,
-    port: config.port || 3000,
-    hostname: config.hostname || 'localhost',
+    overrideGlobalObjects: config.overrideGlobalObjects,
+    port: config.port,
+    hostname: config.hostname,
+    serverOptions: config.serverOptions,
   });
 }
