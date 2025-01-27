@@ -14,7 +14,7 @@ import pluginNextImages from 'gasket-plugin-next-image';
 import pluginTailwind from 'gasket-plugin-tailwind';
 import pluginAuth, { AuthConfig } from 'gasket-plugin-auth';
 import * as v from "valibot"
-import { createSubjects } from "@openauthjs/openauth"
+import { createSubjects } from "@openauthjs/openauth/subject"
 
 export const subjects = createSubjects({
   user: v.object({

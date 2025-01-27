@@ -3,7 +3,7 @@ import type { CreateContext } from 'create-gasket-app';
 import type { Gasket, GasketConfig } from '@gasket/core';
 import type { Config as TailwindConfig } from "tailwindcss";
 import path from 'node:path';
-import pkg from '../package.json' assert { type: 'json' };
+import pkg from '../package.json' with { type: 'json' }; 
 const { name, version, description, devDependencies } = pkg;
 
 declare module '@gasket/core' {

@@ -27,7 +27,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@openauthjs/openauth": "latest",
+    "@openauthjs/openauth": "0.3.6",
     "cookie-parser": "^1.4.6",
     "valibot": "1.0.0-beta.9"
   },
@@ -47,10 +47,10 @@
     }
   },
   "devDependencies": {
-    "@gasket/core": "^7.0.1",
+    "@gasket/core": "^7.2.0",
     "@gasket/plugin-express": "^7.1.2",
-    "@gasket/plugin-logger": "^7.0.1",
-    "@gasket/plugin-nextjs": "^7.0.1",
+    "@gasket/plugin-logger": "^7.2.0",
+    "@gasket/plugin-nextjs": "^7.2.0",
     "@types/cookie-parser": "^1.4.6",
     "@types/react": "^18.0.0",
     "next": "^14.2.14",

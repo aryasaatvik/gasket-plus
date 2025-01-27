@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  '@gasket/plugin-command@7.0.1':
-    hash: mzoltec2c3eathw7hc7c5otw2e
-    path: patches/@gasket__plugin-command@7.0.1.patch
+  '@gasket/plugin-command':
+    hash: lczxpnmfu2icnhzlmmdzcl44xq
+    path: patches/@gasket__plugin-command.patch
 
 importers:
 
@@ -16,53 +16,53 @@ importers:
   apps/gasket-nextjs:
     dependencies:
       '@gasket/assets':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/core':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/intl':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/nextjs':
-        specifier: ^7.0.1
-        version: 7.0.1(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        specifier: ^7.2.0
+        version: 7.2.0(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@gasket/plugin-command':
-        specifier: ^7.0.1
-        version: 7.0.1(patch_hash=mzoltec2c3eathw7hc7c5otw2e)
+        specifier: ^7.2.0
+        version: 7.2.0(patch_hash=lczxpnmfu2icnhzlmmdzcl44xq)
       '@gasket/plugin-docs':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-docusaurus':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-logger@7.0.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-logger@7.2.0)
       '@gasket/plugin-https':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-intl':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-logger':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-metadata':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-nextjs':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-webpack@7.2.0)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gasket/plugin-webpack':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-winston':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-logger@7.0.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-logger@7.2.0)
       '@gasket/react-intl':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-intl@7.0.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-intl@7.2.0)
       '@gasket/utils':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@react-three/drei':
         specifier: ^9.114.0
         version: 9.114.0(@react-three/fiber@8.17.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0))(@types/react@18.3.11)(@types/three@0.169.0)(immer@9.0.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)
@@ -95,7 +95,7 @@ importers:
         version: 6.7.0(react@18.3.1)(typescript@5.6.2)
       sst:
         specifier: ion
-        version: 3.4.27(hono@4.6.14)
+        version: 3.6.17
       three:
         specifier: ^0.169.0
         version: 0.169.0
@@ -137,8 +137,8 @@ importers:
   packages/plugin-auth:
     dependencies:
       '@openauthjs/openauth':
-        specifier: latest
-        version: 0.2.5(arctic@2.3.3)(hono@4.6.14)
+        specifier: 0.3.6
+        version: 0.3.6(arctic@2.3.3)(hono@4.6.14)
       cookie-parser:
         specifier: ^1.4.6
         version: 1.4.7
@@ -150,17 +150,17 @@ importers:
         version: 1.0.0-beta.9(typescript@5.6.2)
     devDependencies:
       '@gasket/core':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-express':
         specifier: ^7.1.2
         version: 7.1.2(express@4.21.0)
       '@gasket/plugin-logger':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-nextjs':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-webpack@7.2.0)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/cookie-parser':
         specifier: ^1.4.6
         version: 1.4.8(@types/express@4.17.21)
@@ -180,11 +180,11 @@ importers:
   packages/plugin-next-image:
     devDependencies:
       '@gasket/core':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-nextjs':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-webpack@7.2.0)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: ^14.2.14
         version: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -192,14 +192,14 @@ importers:
   packages/plugin-tailwind:
     devDependencies:
       '@gasket/core':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       '@gasket/plugin-nextjs':
-        specifier: ^7.0.1
-        version: 7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^7.2.0
+        version: 7.2.0(@gasket/plugin-webpack@7.2.0)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gasket/plugin-typescript':
-        specifier: ^7.0.1
-        version: 7.0.1
+        specifier: ^7.2.0
+        version: 7.2.0
       create-gasket-app:
         specifier: ^7.0.2
         version: 7.0.2
@@ -1645,37 +1645,37 @@ packages:
       typescript:
         optional: true
 
-  '@gasket/assets@7.0.1':
-    resolution: {integrity: sha512-FH9Z0U/pv/K6HG2sAV94ThddGQzzRC3CJjB0jMntTGbJpVNahMN8xNF6hNYT0GzUZtg8iDjK526uj5oT5yUW1g==}
+  '@gasket/assets@7.2.0':
+    resolution: {integrity: sha512-wdDTYQauh1l/f6/yqjSl6PG/Y3pjrr6EUpXHioOCeKBG0zqnsfwmYBfdoLkcWKrM+C/V5zRiFyiiHX5XuynY0A==}
 
-  '@gasket/core@7.0.1':
-    resolution: {integrity: sha512-qW4jywKNC6LhKb64njW7Q7F+cBAr10QwXaIcfkhNLCCSMSXk5Y1l0LGgmyhbLheKzRWZ1kXQNXhNhJV33V9erQ==}
+  '@gasket/core@7.2.0':
+    resolution: {integrity: sha512-cBGrGmYX2I2vP8woDnBJZCOFbk3FhCRjEfPb731OCIaIgJRsHrRx9fbRT0e8Dj3HmiV8sH8J+a5GOa4zOFnhnw==}
 
-  '@gasket/data@7.0.1':
-    resolution: {integrity: sha512-r92WkRhiqqq4Klx6FNUag0wBdTz8k9YcP6+w3tA1q1zqkZNYan1wVVn9e0XyAOKyQTkIhD4KuOcVKZU+om96Hw==}
+  '@gasket/data@7.2.0':
+    resolution: {integrity: sha512-PGs5ME5sgjBaRhVnecj6N98fCu0UU7x/diSJU7dfE5Zn/XNeR9WcIXInWveV0ClQLoV9JGFJM76fFGZt3sM0ww==}
 
-  '@gasket/fetch@7.0.1':
-    resolution: {integrity: sha512-pLHloaJ6Rn9I+lGFC1J/b7b5mNoepfGKWhZWv4cTP7p4wL9bMw4iPcGpF/vY6dN7q9mTzihLRZVmWcBEKUU6wQ==}
+  '@gasket/fetch@7.2.0':
+    resolution: {integrity: sha512-Kg3ei6LOLdGrMUEqnFeuEtmEKAzQ9UDKzywYRNS0L5PJz3Hy3gvwxc3y/fFoGG69zBp5DyVTDDuPArh6J4pS/g==}
 
-  '@gasket/intl@7.0.1':
-    resolution: {integrity: sha512-yCLzP1rBPxuvfvVUV21QpW3HBdwIwt0tYuUcEwrzO89Jf0n7JCTuKdrnJlSSLgYfsP6qaHSj6l1NZTnfS1DBtQ==}
+  '@gasket/intl@7.2.0':
+    resolution: {integrity: sha512-xkCsCLnKfqMnAcePGOH7gBNyoBPRmVSS+Gd9C8acweV2ZrOuDGTWR/U7jAVJouqLd7INgfcw6N7MjgsYXqAUig==}
 
-  '@gasket/nextjs@7.0.1':
-    resolution: {integrity: sha512-gvxi8j349UqhFs4Z+ZfSQQZnGmpFeyEEr9upIwhYMi6QnjLTAfVHNBM7NaOF8pJ9AGTcE9utL6Dg8VJTv3UUIw==}
+  '@gasket/nextjs@7.2.0':
+    resolution: {integrity: sha512-Gbry1q03aGfAktsRHyxdN7TZt9fRDbdt4zHoQl8Nm2O+zQta6ms5kPTFWpmMqsyZbcrRNi9S+Z3FEouno8eQUA==}
     peerDependencies:
       next: ^14
       react: ^18
 
-  '@gasket/plugin-command@7.0.1':
-    resolution: {integrity: sha512-rvD3BuG4Nqjjoec7LAQhiiYEFbA/MZ3TUUvgPp0RvXhgw95BKxMvXELiCS8gmWgtqdnB/hReo00vMRteC9QWHw==}
+  '@gasket/plugin-command@7.2.0':
+    resolution: {integrity: sha512-BWA93os9awBFGTasgFHuNDtJg5xLxkPvWGg+Rk2ouRWE0Ek8Fb3j9/iolK+F4E8Peux9riPaOfaf0ojOemRmZA==}
 
-  '@gasket/plugin-docs@7.0.1':
-    resolution: {integrity: sha512-aurCuH68naAUoMS6yTxSicpBFvmFeuuDpBKfD0urw0vdHUUDONgx7N27umAwnI4u5HB/mgGNcsGnpaNWFL9q8A==}
+  '@gasket/plugin-docs@7.2.0':
+    resolution: {integrity: sha512-8u3LERuZpW7VMV5wb3o//ZVa1DWcbKPYDQr3Z8AWrN3k2Z9i8IMr+Vh9rh6I+SxcahGB2GFB2h1OOP2geejTkQ==}
 
-  '@gasket/plugin-docusaurus@7.0.1':
-    resolution: {integrity: sha512-iwEB5q3Xif5TvSQrvdjDnm4xyrTAyF7CHiJ34BKYmx/v5Ls162lh2WEo2xXu6SfbXzqkeObLhq3c3wdC0WosAw==}
+  '@gasket/plugin-docusaurus@7.2.0':
+    resolution: {integrity: sha512-wg1Aax7jcTE8uGhGXnXeFg+mY3vRN5QsxfO8UxHhmpAQoiUb3dpeezrgE38Bz56kzMpx6q0MNldr/69lUAla8Q==}
     peerDependencies:
-      '@gasket/plugin-logger': ^7
+      '@gasket/plugin-logger': ^7.1
 
   '@gasket/plugin-express@7.1.2':
     resolution: {integrity: sha512-lC9MhRWyC14aoEAJFC0t+ujN4lgH//RQbZaEIuikNfedW/TrUB166+BGsS3Aj8ss1qVH4gUfk0tNB/y5nvVprQ==}
@@ -1685,56 +1685,50 @@ packages:
   '@gasket/plugin-git@7.0.1':
     resolution: {integrity: sha512-CwvhzTpNBL9Gu1lq5SYIk8crRj2h7QZC8lwjeAbplqn7jDmH5nW3X7yCK7RaaM4A3FvDvVi8NRXhbwvk06mSxw==}
 
-  '@gasket/plugin-https@7.0.1':
-    resolution: {integrity: sha512-ML0S6jt2mcfKLUcobTFa9P1lJfTGLW10SXytw+1tMKTO18ER97Wc71tLoZ2nMXRzu0tOY0d8x2dpeFRQYQ9Yog==}
+  '@gasket/plugin-https@7.2.0':
+    resolution: {integrity: sha512-PSrDdqwl5iJ1nePRFQuZChaeqKIRxenKaEQhlduZtOxTxIQoGgCU/9MB2rG1k2BJwYM/jHkDvo0zcbI2rTfnUQ==}
 
-  '@gasket/plugin-intl@7.0.1':
-    resolution: {integrity: sha512-EgrVgzSjyLFDucr6CuiAhpLf8NOJkk+0moEpYLzal3Tc0Au9yHY0h5zlcb4kb9mP1Ufm70OJk6KAZ+dprlQHGw==}
+  '@gasket/plugin-intl@7.2.0':
+    resolution: {integrity: sha512-McWC2THERXw8bQ5MnO9P0Thhbxk8ORmP/fMWQTwaHjmJlkvVIcouCVstobAzVIPkQqTAo6h66feoWkGRwsMhfw==}
 
-  '@gasket/plugin-logger@7.0.1':
-    resolution: {integrity: sha512-HdhmVsldOTXzQrpLM4CS2CG3akOmKY+Utl1nj9avQotvLoBiz1Kpx6kmbrSynxL07N1+MpoEc58j0tv5ubCtpw==}
+  '@gasket/plugin-logger@7.2.0':
+    resolution: {integrity: sha512-SDB0ODf2kKPGir/2flNDBUXLUuxQPwM6vBQ7czZwFP4TBxarvsYTCgLgVHe+G8oj32AvNx33U/qe9NIt46eAIA==}
 
-  '@gasket/plugin-metadata@7.0.1':
-    resolution: {integrity: sha512-mZZpM+hr8FLccwX5aNVuvGbo4V7Z+776nn45H1/9l9y3PR0mxJgYjupRjvzsEjd3VsqpyxvAYrJonODWtjaZVw==}
+  '@gasket/plugin-metadata@7.2.0':
+    resolution: {integrity: sha512-x74IpTou1FfhsWVI9IjL+Vw+1HUqhyLuMBY5/gLKZdLwMdzM3gszcFXumk7F7iPilhhOSz+ELGRRaWpOWjWc9A==}
 
-  '@gasket/plugin-nextjs@7.0.1':
-    resolution: {integrity: sha512-npLj3Qu5p7IwSLMh/i/y/TeEODP0BHa415nRz85Zxl8CmfYIzZgOBBgnCkkG6XpSlaMGKuVeOWRa4U2FPgqySQ==}
+  '@gasket/plugin-nextjs@7.2.0':
+    resolution: {integrity: sha512-g7+6o+I4EvMWPPySgeXjTQNJtmclHI1JNJyEFPfO8ow8vaAUcZ5CPRuvEZVn29NBQzjD8pBPzMw5H8BUtMJdRQ==}
     peerDependencies:
-      '@gasket/plugin-webpack': ^7
+      '@gasket/plugin-webpack': ^7.1
       next: ^14
       react: ^18
       react-dom: ^18
 
-  '@gasket/plugin-typescript@7.0.1':
-    resolution: {integrity: sha512-kgfoO0VGp7UjHMBPOLfmBolgy91962kiNuv4iqP5nfIA0Z6jaF+a9uVwBdzlnB20u/+/ehH/gDD8Joaj4mLFxw==}
+  '@gasket/plugin-typescript@7.2.0':
+    resolution: {integrity: sha512-wv7wv4X48OetZ3bacg4ziJcklzDt18sAMnNrFyzzNTzDKE7bBBojvvpRu2OetKF5WVs81eFOpBp3qhr97222jw==}
 
-  '@gasket/plugin-webpack@7.0.1':
-    resolution: {integrity: sha512-XIdtdQgQa8LKsKK7La6XlbZEQSnZSGl8taHUKJCwrUhwDmQUq2tfUBP39bPqIVFCYFskfoOvwHj0JubtdFmhPw==}
+  '@gasket/plugin-webpack@7.2.0':
+    resolution: {integrity: sha512-KR0tMwJHI+rd+g0/efexLLwlvbxrJMUgNOhvmAs9wwqNKLGZIffdc3f1FomQ3sdi0sOzapoHuD9N1ZzjXeTaLw==}
 
-  '@gasket/plugin-winston@7.0.1':
-    resolution: {integrity: sha512-FVvPtOiDB5plTk1axKu5xKeJrrs0f3jOXLhJkFR0+/gpQ5XPtRVatBFVV09LJZTWmeTRHNOVz4Jw82CgH10Z/g==}
+  '@gasket/plugin-winston@7.2.0':
+    resolution: {integrity: sha512-uIG8PXB2hYplvtIorwtgAbBKn4ACrrH6csqmKNMpn02wYdRpH6wCPdp7dW7If6vkaSClmdhmyB+TUxYaZ0X/Ng==}
     peerDependencies:
-      '@gasket/plugin-logger': ^7
+      '@gasket/plugin-logger': ^7.1
 
-  '@gasket/react-intl@7.0.1':
-    resolution: {integrity: sha512-Nxmd0gfrbQDyR7p6KSXH0fv9hlO271TSb5ahnkudmLNYmfudpdIwVRNxRfqhrTgmAEWBY0kcjouE8MEyN6LH/Q==}
+  '@gasket/react-intl@7.2.0':
+    resolution: {integrity: sha512-Crd3iitBemMc4YvEBZPfojjmJWg80AZEmBYBQGp4Y6ZbTYqhUZhH9uw/2oyUGnloBIDohkk2cK4DXgsKalMLAw==}
     peerDependencies:
-      '@gasket/plugin-intl': ^7
+      '@gasket/plugin-intl': ^7.1
 
-  '@gasket/utils@7.0.1':
-    resolution: {integrity: sha512-72o902sPuw9P2Ov2o4zlqq2wn0sayOQeGG5qqCqOPaAwfR/3eSTSzSeqY4tSHKTBgXiDF/gg3mxWqwXGEDIYeQ==}
+  '@gasket/request@7.2.0':
+    resolution: {integrity: sha512-QzS9V/SpmVNG8NHU3QVrwZzDYyqI3NxYBt2HWjVTeTHjpU9IrYvtZ6hd59+MlZk7vx3IfIiHfv2FKUGra/MliQ==}
+
+  '@gasket/utils@7.2.0':
+    resolution: {integrity: sha512-rMmOdQ9gqHWy6meynkzUosVdvw4XSrsNkb8P6/3CCmjJQIvHreBwf9smKzjTEsHJDL9CTtbQX9WVrL/ztRhiAw==}
 
   '@godaddy/terminus@4.12.1':
     resolution: {integrity: sha512-Tm+wVu1/V37uZXcT7xOhzdpFoovQReErff8x3y82k6YyWa1gzxWBjTyrx4G2enjEqoXPnUUmJ3MOmwH+TiP6Sw==}
-
-  '@hapi/accept@6.0.3':
-    resolution: {integrity: sha512-p72f9k56EuF0n3MwlBNThyVE5PXX40g+aQh+C/xbKrfzahM2Oispv3AXmOIU51t3j77zay1qrX7IIziZXspMlw==}
-
-  '@hapi/boom@10.0.1':
-    resolution: {integrity: sha512-ERcCZaEjdH3OgSJlyjVk8pHIFeus91CjKP3v+MpgBNp5IvGzP2l/bRiD78nqYcKPaZdbKkK5vDBVPd2ohHBlsA==}
-
-  '@hapi/hoek@11.0.4':
-    resolution: {integrity: sha512-PnsP5d4q7289pS2T2EgGz147BFJ2Jpb4yrEdkpz2IhgEUzos1S7HTl7ezWh1yfYzYlj89KzLdCRkqsP6SIryeQ==}
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -1893,8 +1887,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@openauthjs/openauth@0.2.5':
-    resolution: {integrity: sha512-YdppnBxRPIuse++xBV1mrGu/f/t1ilYPimKkBzypSjcLD+o5t50IeLwm/xg5QzVG+I1chKholT01hK41BBTaRg==}
+  '@openauthjs/openauth@0.3.6':
+    resolution: {integrity: sha512-WZ/53Rc7DLI8W/6ZGvmwoMJAB035Yk1zzf/cKIHfLCoUbzEHKnxRPO2ADLwq992H45X0ZyIJs+YQ9ehoqrSFnQ==}
     peerDependencies:
       arctic: ^2.2.2
       hono: ^4.0.0
@@ -4343,6 +4337,10 @@ packages:
     resolution: {integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==}
     engines: {node: '>=0.10.0'}
 
+  is-plain-object@5.0.0:
+    resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
+    engines: {node: '>=0.10.0'}
+
   is-promise@2.2.2:
     resolution: {integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==}
 
@@ -4952,6 +4950,10 @@ packages:
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
+    engines: {node: '>= 0.6'}
+
+  negotiator@1.0.0:
+    resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
     engines: {node: '>= 0.6'}
 
   neo-async@2.6.2:
@@ -6121,42 +6123,34 @@ packages:
     resolution: {integrity: sha512-wvLeHgcVHKO8Sc/H/5lkGreJQVeYMm9rlmt8PuR1xE31rIuXhuzznUUqAt8MqLhB3MqJdFzlNAfpcWnxiFUcPw==}
     engines: {node: '>=12'}
 
-  sst-darwin-arm64@3.4.27:
-    resolution: {integrity: sha512-A8NyZ7Q3sv1B+t7PC2UTAnozrnifXhy1ERha59wOoyHhMC9Spb9tKNtRZSkr2YfmknqLMAB7ahqnD5e2DcpG+g==}
+  sst-darwin-arm64@3.6.17:
+    resolution: {integrity: sha512-7nVceeQm/fRqDzRDfl79uHibyA/ynsOgykNK+jv2HycK9BVSyVzl2vt3FmmyQcNqhG+kcuFC7C/nPRnawhyN2Q==}
     cpu: [arm64]
     os: [darwin]
 
-  sst-darwin-x64@3.4.27:
-    resolution: {integrity: sha512-UXYxS7WIWp+wPNTFJL97Lbp4dhz+3u6dXo8v8wcW4tiikCITThV2S8jtSWo534KIlwxUFOCMtQxJSO35r5mg7w==}
+  sst-darwin-x64@3.6.17:
+    resolution: {integrity: sha512-H5f0D9Y/jFK9dfLlrnlmpzqAsZm4mJoLE0wA4i2MINCK/Cu7dJIHWpZ5KXW7p4rZxJiVPzqPtkHxmvHRZSiu4g==}
     cpu: [x64]
     os: [darwin]
 
-  sst-linux-arm64@3.4.27:
-    resolution: {integrity: sha512-Rw1Qcfk7nYzy/1xER6D8VBDYeOaHC3sjuF6aobkXqUnL8iwoGEoRnPyMHfpmWcWm51GSxUjxfByzUZbKunLUdA==}
+  sst-linux-arm64@3.6.17:
+    resolution: {integrity: sha512-HBiNI9Nob03rtpMcNXHWwhMkHtKjPx7JaHQPK9t9tqn+OaO0AYVvpq22IW06IIprNY9ZSwln44/VE/+IrQ9SGw==}
     cpu: [arm64]
     os: [linux]
 
-  sst-linux-x64@3.4.27:
-    resolution: {integrity: sha512-QVUKw/wDNb3LOpZYx9asCY0SyYoejXSsBk1tV02SjFpHm8X1Chs7UCGZbnnMXU/e1APEkkkEaIeRH5UQsbkEXw==}
+  sst-linux-x64@3.6.17:
+    resolution: {integrity: sha512-Aqia7aQk0Yq7LhpdiKM80jY9v8nHy0xVWngNJJmn2B4PRjCP5Zo6LxCEq+RY+DG0g7pXIAJmyXBL9oIU4EBOAQ==}
     cpu: [x64]
     os: [linux]
 
-  sst-linux-x86@3.4.27:
-    resolution: {integrity: sha512-7djfOVS3GJlr/iuK7SYEmtA2qZAh57rsvOVTWwqyuLDzxBAO+5kEQVXij3P0mbrTxSGYBSpcrpyU0aGdMNq0Hw==}
+  sst-linux-x86@3.6.17:
+    resolution: {integrity: sha512-hXhOHsADKRnVMuLHjCNc9Q64n0AQUbVocLtBmtiO7xbCBQtLlPYmkaWc9aZK4LHwdWK5U8yv8RAlwCXR1p/Dlg==}
     cpu: [x86]
     os: [linux]
 
-  sst@3.4.27:
-    resolution: {integrity: sha512-3BiVsT94i2sU2j0D78dhDg7O402Ak8Z4m4CR6LT9nzY9VLz7C21wM5ei56ZBeYktOYFotRIUV3yKGiPsxDPqmw==}
+  sst@3.6.17:
+    resolution: {integrity: sha512-VEhFNns9wZEKymq16hNAk9Q4TbHKv1yZiQtvZKl5PF0ZJ5iaKzz0SR2WDtxKmULz++e0FA/jpm+DgRMs1bchSA==}
     hasBin: true
-    peerDependencies:
-      hono: 4.x
-      valibot: 0.30.x
-    peerDependenciesMeta:
-      hono:
-        optional: true
-      valibot:
-        optional: true
 
   stack-trace@0.0.10:
     resolution: {integrity: sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==}
@@ -9411,42 +9405,50 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.2
 
-  '@gasket/assets@7.0.1': {}
+  '@gasket/assets@7.2.0': {}
 
-  '@gasket/core@7.0.1':
+  '@gasket/core@7.2.0':
     dependencies:
+      '@gasket/utils': 7.2.0
       debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/data@7.0.1': {}
+  '@gasket/data@7.2.0':
+    dependencies:
+      '@gasket/request': 7.2.0
+    transitivePeerDependencies:
+      - supports-color
 
-  '@gasket/fetch@7.0.1':
+  '@gasket/fetch@7.2.0':
     dependencies:
       abort-controller: 3.0.0
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
 
-  '@gasket/intl@7.0.1': {}
+  '@gasket/intl@7.2.0': {}
 
-  '@gasket/nextjs@7.0.1(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@gasket/nextjs@7.2.0(next@14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gasket/data': 7.0.1
+      '@gasket/data': 7.2.0
+      '@gasket/request': 7.2.0
       htmlescape: 1.1.1
       next: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
+    transitivePeerDependencies:
+      - supports-color
 
-  '@gasket/plugin-command@7.0.1(patch_hash=mzoltec2c3eathw7hc7c5otw2e)':
+  '@gasket/plugin-command@7.2.0(patch_hash=lczxpnmfu2icnhzlmmdzcl44xq)':
     dependencies:
-      '@gasket/core': 7.0.1
+      '@gasket/core': 7.2.0
       commander: 12.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-docs@7.0.1':
+  '@gasket/plugin-docs@7.2.0':
     dependencies:
-      '@gasket/plugin-command': 7.0.1(patch_hash=mzoltec2c3eathw7hc7c5otw2e)
+      '@gasket/plugin-command': 7.2.0(patch_hash=lczxpnmfu2icnhzlmmdzcl44xq)
       glob: 8.1.0
       lodash.defaultsdeep: 4.6.1
       markdown-table: 1.1.3
@@ -9455,9 +9457,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-docusaurus@7.0.1(@gasket/plugin-logger@7.0.1)':
+  '@gasket/plugin-docusaurus@7.2.0(@gasket/plugin-logger@7.2.0)':
     dependencies:
-      '@gasket/plugin-logger': 7.0.1
+      '@gasket/plugin-logger': 7.2.0
       lodash.defaultsdeep: 4.6.1
 
   '@gasket/plugin-express@7.1.2(express@4.21.0)':
@@ -9475,9 +9477,9 @@ snapshots:
 
   '@gasket/plugin-git@7.0.1':
     dependencies:
-      '@gasket/utils': 7.0.1
+      '@gasket/utils': 7.2.0
 
-  '@gasket/plugin-https@7.0.1':
+  '@gasket/plugin-https@7.2.0':
     dependencies:
       '@godaddy/terminus': 4.12.1
       '@types/http-proxy': 1.17.15
@@ -9489,76 +9491,75 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@gasket/plugin-intl@7.0.1':
+  '@gasket/plugin-intl@7.2.0':
     dependencies:
-      '@hapi/accept': 6.0.3
+      '@gasket/request': 7.2.0
       debug: 4.3.7
       fs-extra: 10.1.0
       glob: 8.1.0
       intl: 1.2.5
+      negotiator: 1.0.0
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-logger@7.0.1': {}
+  '@gasket/plugin-logger@7.2.0': {}
 
-  '@gasket/plugin-metadata@7.0.1':
+  '@gasket/plugin-metadata@7.2.0':
     dependencies:
-      '@gasket/core': 7.0.1
+      '@gasket/core': 7.2.0
+      '@gasket/plugin-logger': 7.2.0
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-nextjs@7.0.1(@gasket/plugin-webpack@7.0.1)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gasket/plugin-nextjs@7.2.0(@gasket/plugin-webpack@7.2.0)(next@14.2.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gasket/plugin-webpack': 7.0.1
+      '@gasket/plugin-webpack': 7.2.0
       fastify: 4.28.1
       next: 14.2.14(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@gasket/plugin-typescript@7.0.1': {}
+  '@gasket/plugin-typescript@7.2.0': {}
 
-  '@gasket/plugin-webpack@7.0.1': {}
+  '@gasket/plugin-webpack@7.2.0': {}
 
-  '@gasket/plugin-winston@7.0.1(@gasket/plugin-logger@7.0.1)':
+  '@gasket/plugin-winston@7.2.0(@gasket/plugin-logger@7.2.0)':
     dependencies:
-      '@gasket/plugin-logger': 7.0.1
+      '@gasket/plugin-logger': 7.2.0
       winston: 3.14.2
 
-  '@gasket/react-intl@7.0.1(@gasket/plugin-intl@7.0.1)':
+  '@gasket/react-intl@7.2.0(@gasket/plugin-intl@7.2.0)':
     dependencies:
-      '@gasket/data': 7.0.1
-      '@gasket/fetch': 7.0.1
-      '@gasket/intl': 7.0.1
-      '@gasket/plugin-intl': 7.0.1
+      '@gasket/data': 7.2.0
+      '@gasket/fetch': 7.2.0
+      '@gasket/intl': 7.2.0
+      '@gasket/plugin-intl': 7.2.0
       hoist-non-react-statics: 3.3.2
       htmlescape: 1.1.1
       just-extend: 6.2.0
     transitivePeerDependencies:
       - encoding
+      - supports-color
 
-  '@gasket/utils@7.0.1':
+  '@gasket/request@7.2.0':
+    dependencies:
+      debug: 4.3.7
+    transitivePeerDependencies:
+      - supports-color
+
+  '@gasket/utils@7.2.0':
     dependencies:
       chalk: 4.1.2
       concat-stream: 2.0.0
+      deepmerge: 4.3.1
       diagnostics: 2.0.2
-      lodash.defaultsdeep: 4.6.1
+      is-plain-object: 5.0.0
       semver: 7.6.3
 
   '@godaddy/terminus@4.12.1':
     dependencies:
       stoppable: 1.1.0
-
-  '@hapi/accept@6.0.3':
-    dependencies:
-      '@hapi/boom': 10.0.1
-      '@hapi/hoek': 11.0.4
-
-  '@hapi/boom@10.0.1':
-    dependencies:
-      '@hapi/hoek': 11.0.4
-
-  '@hapi/hoek@11.0.4': {}
 
   '@hapi/hoek@9.3.0': {}
 
@@ -9728,7 +9729,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@openauthjs/openauth@0.2.5(arctic@2.3.3)(hono@4.6.14)':
+  '@openauthjs/openauth@0.3.6(arctic@2.3.3)(hono@4.6.14)':
     dependencies:
       '@standard-schema/spec': 1.0.0-beta.3
       arctic: 2.3.3
@@ -11255,14 +11256,14 @@ snapshots:
 
   create-gasket-app@7.0.2:
     dependencies:
-      '@gasket/core': 7.0.1
-      '@gasket/plugin-command': 7.0.1(patch_hash=mzoltec2c3eathw7hc7c5otw2e)
-      '@gasket/plugin-docs': 7.0.1
-      '@gasket/plugin-docusaurus': 7.0.1(@gasket/plugin-logger@7.0.1)
+      '@gasket/core': 7.2.0
+      '@gasket/plugin-command': 7.2.0(patch_hash=lczxpnmfu2icnhzlmmdzcl44xq)
+      '@gasket/plugin-docs': 7.2.0
+      '@gasket/plugin-docusaurus': 7.2.0(@gasket/plugin-logger@7.2.0)
       '@gasket/plugin-git': 7.0.1
-      '@gasket/plugin-logger': 7.0.1
-      '@gasket/plugin-metadata': 7.0.1
-      '@gasket/utils': 7.0.1
+      '@gasket/plugin-logger': 7.2.0
+      '@gasket/plugin-metadata': 7.2.0
+      '@gasket/utils': 7.2.0
       commander: 12.1.0
       deepmerge: 4.3.1
       glob: 8.1.0
@@ -12674,6 +12675,8 @@ snapshots:
     dependencies:
       isobject: 3.0.1
 
+  is-plain-object@5.0.0: {}
+
   is-promise@2.2.2: {}
 
   is-reference@3.0.2:
@@ -13541,6 +13544,8 @@ snapshots:
     optional: true
 
   negotiator@0.6.3: {}
+
+  negotiator@1.0.0: {}
 
   neo-async@2.6.2: {}
 
@@ -14836,33 +14841,32 @@ snapshots:
 
   srcset@4.0.0: {}
 
-  sst-darwin-arm64@3.4.27:
+  sst-darwin-arm64@3.6.17:
     optional: true
 
-  sst-darwin-x64@3.4.27:
+  sst-darwin-x64@3.6.17:
     optional: true
 
-  sst-linux-arm64@3.4.27:
+  sst-linux-arm64@3.6.17:
     optional: true
 
-  sst-linux-x64@3.4.27:
+  sst-linux-x64@3.6.17:
     optional: true
 
-  sst-linux-x86@3.4.27:
+  sst-linux-x86@3.6.17:
     optional: true
 
-  sst@3.4.27(hono@4.6.14):
+  sst@3.6.17:
     dependencies:
       aws4fetch: 1.0.20
       jose: 5.2.3
       openid-client: 5.6.4
     optionalDependencies:
-      hono: 4.6.14
-      sst-darwin-arm64: 3.4.27
-      sst-darwin-x64: 3.4.27
-      sst-linux-arm64: 3.4.27
-      sst-linux-x64: 3.4.27
-      sst-linux-x86: 3.4.27
+      sst-darwin-arm64: 3.6.17
+      sst-darwin-x64: 3.6.17
+      sst-linux-arm64: 3.6.17
+      sst-linux-x64: 3.6.17
+      sst-linux-x86: 3.6.17
 
   stack-trace@0.0.10: {}
 
