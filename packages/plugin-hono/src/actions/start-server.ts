@@ -1,4 +1,4 @@
-import { Gasket } from '@gasket/core';
+import type { Gasket } from '@gasket/core';
 import { serve } from '@hono/node-server';
 import { cors } from 'hono/cors';
 import { compress } from 'hono/compress';
@@ -23,15 +23,12 @@ export default async function startServer(gasket: Gasket) {
   }
 
   await gasket.exec('hono', app);
-
   const errorMiddlewares = await gasket.exec('errorMiddleware');
-  errorMiddlewares
-    .filter(Boolean)
-    .forEach(errorMiddleware => {
-      if (typeof errorMiddleware === 'function') {
-        app.onError(errorMiddleware);
-      }
-    });
+  for (const errorMiddleware of errorMiddlewares.filter(Boolean)) {
+    if (typeof errorMiddleware === 'function') {
+      app.onError(errorMiddleware);
+    }
+  }
   
   console.log(`starting server on port ${config.port || 3000}`);
   serve({
