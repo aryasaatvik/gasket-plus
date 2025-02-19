@@ -1,0 +1,13 @@
+diff --git a/dist/index.d.ts b/dist/index.d.ts
+index 7a03b52a291f9e7c240c5cca5b72a76e97e51fa7..e1cc9b9fc20f138c38d1752d0438a01fc0802d37 100644
+--- a/dist/index.d.ts
++++ b/dist/index.d.ts
+@@ -1,7 +1,7 @@
+ export { createAdaptorServer, serve } from './server.js';
+ export { getRequestListener } from './listener.js';
+ export { RequestError } from './request.js';
+-export { Http2Bindings, HttpBindings, ServerType } from './types.js';
++export { Http2Bindings, HttpBindings, ServerType, Options } from './types.js';
+ import 'node:net';
+ import 'node:http';
+ import 'node:http2';

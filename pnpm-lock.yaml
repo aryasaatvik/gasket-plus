@@ -8,6 +8,9 @@ patchedDependencies:
   '@gasket/plugin-command':
     hash: lczxpnmfu2icnhzlmmdzcl44xq
     path: patches/@gasket__plugin-command.patch
+  '@hono/node-server':
+    hash: 2hffmhxwhuwlrux4tyfovnllfi
+    path: patches/@hono__node-server.patch
 
 importers:
 
@@ -95,7 +98,7 @@ importers:
         version: 6.7.0(react@18.3.1)(typescript@5.6.2)
       sst:
         specifier: ion
-        version: 3.6.17
+        version: 3.9.7
       three:
         specifier: ^0.169.0
         version: 0.169.0
@@ -208,7 +211,7 @@ importers:
     dependencies:
       '@openauthjs/openauth':
         specifier: 0.3.6
-        version: 0.3.6(arctic@2.3.3)(hono@4.6.14)
+        version: 0.3.6(arctic@2.3.3)(hono@4.7.2)
       cookie-parser:
         specifier: ^1.4.6
         version: 1.4.7
@@ -256,11 +259,11 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       '@hono/node-server':
-        specifier: ^1.13.0
-        version: 1.13.7(hono@4.6.14)
+        specifier: ^1.13.8
+        version: 1.13.8(patch_hash=2hffmhxwhuwlrux4tyfovnllfi)(hono@4.7.2)
       hono:
-        specifier: ^4.6.0
-        version: 4.6.14
+        specifier: ^4.7.2
+        version: 4.7.2
     devDependencies:
       '@gasket/core':
         specifier: ^7.2.0
@@ -2902,8 +2905,8 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@hono/node-server@1.13.7':
-    resolution: {integrity: sha512-kTfUMsoloVKtRA2fLiGSd9qBddmru9KadNyhJCwgKBxTiNkaAJEwkVN9KV/rS4HtmmNRtUh6P+YpmjRMl0d9vQ==}
+  '@hono/node-server@1.13.8':
+    resolution: {integrity: sha512-fsn8ucecsAXUoVxrUil0m13kOEq4mkX4/4QozCqmY+HpGfKl74OYSn8JcMA8GnG0ClfdRI4/ZSeG7zhFaVg+wg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -5312,8 +5315,8 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
-  hono@4.6.14:
-    resolution: {integrity: sha512-j4VkyUp2xazGJ8eCCLN1Vm/bxdvm/j5ZuU9AIjLu9vapn2M44p9L3Ktr9Vnb2RN2QtcR/wVjZVMlT5k7GJQgPw==}
+  hono@4.7.2:
+    resolution: {integrity: sha512-8V5XxoOF6SI12jkHkzX/6aLBMU5GEF5g387EjVSQipS0DlxWgWGSMeEayY3CRBjtTUQYwLHx9JYouWqKzy2Vng==}
     engines: {node: '>=16.9.0'}
 
   hpack.js@2.1.6:
@@ -7589,33 +7592,33 @@ packages:
     resolution: {integrity: sha512-wvLeHgcVHKO8Sc/H/5lkGreJQVeYMm9rlmt8PuR1xE31rIuXhuzznUUqAt8MqLhB3MqJdFzlNAfpcWnxiFUcPw==}
     engines: {node: '>=12'}
 
-  sst-darwin-arm64@3.6.17:
-    resolution: {integrity: sha512-7nVceeQm/fRqDzRDfl79uHibyA/ynsOgykNK+jv2HycK9BVSyVzl2vt3FmmyQcNqhG+kcuFC7C/nPRnawhyN2Q==}
+  sst-darwin-arm64@3.9.7:
+    resolution: {integrity: sha512-+VMektbUZrvq2SD897bKwGYgmb+3GEs08rQtFRFfVq5jEz49b2T/D8N86RAa48j/qIIBxz7ZFG7qNkS/BuYm9w==}
     cpu: [arm64]
     os: [darwin]
 
-  sst-darwin-x64@3.6.17:
-    resolution: {integrity: sha512-H5f0D9Y/jFK9dfLlrnlmpzqAsZm4mJoLE0wA4i2MINCK/Cu7dJIHWpZ5KXW7p4rZxJiVPzqPtkHxmvHRZSiu4g==}
+  sst-darwin-x64@3.9.7:
+    resolution: {integrity: sha512-0dIOw7bUn0DSAqPNTj8fR0ImRouS3wB6hydslSSmCzsndgMNEd0sr4Lxq/ZGc5ZUJmGXUxaUxFGNov2HjKsUWA==}
     cpu: [x64]
     os: [darwin]
 
-  sst-linux-arm64@3.6.17:
-    resolution: {integrity: sha512-HBiNI9Nob03rtpMcNXHWwhMkHtKjPx7JaHQPK9t9tqn+OaO0AYVvpq22IW06IIprNY9ZSwln44/VE/+IrQ9SGw==}
+  sst-linux-arm64@3.9.7:
+    resolution: {integrity: sha512-68K+qfhSgAZaeUZDJzGjZs0Cx5l1dugyNaytfZ/7Gjy1sp+xdUagagreXcULrHDJsYHMmCleVzykJsVb4PA2YA==}
     cpu: [arm64]
     os: [linux]
 
-  sst-linux-x64@3.6.17:
-    resolution: {integrity: sha512-Aqia7aQk0Yq7LhpdiKM80jY9v8nHy0xVWngNJJmn2B4PRjCP5Zo6LxCEq+RY+DG0g7pXIAJmyXBL9oIU4EBOAQ==}
+  sst-linux-x64@3.9.7:
+    resolution: {integrity: sha512-6jhJGCGm/aZ817bCUYrSU71zazDcFBK+oPkP1YPSgEESCpfvvrRUK7BNQHsZTOeyYPe4wI374BMyqKTwNuim4Q==}
     cpu: [x64]
     os: [linux]
 
-  sst-linux-x86@3.6.17:
-    resolution: {integrity: sha512-hXhOHsADKRnVMuLHjCNc9Q64n0AQUbVocLtBmtiO7xbCBQtLlPYmkaWc9aZK4LHwdWK5U8yv8RAlwCXR1p/Dlg==}
+  sst-linux-x86@3.9.7:
+    resolution: {integrity: sha512-Pid8OtbXhb0CRs7WCDTgc9qme5gwDme78k9hhf7lZ8NmB1mYU2gar+jhTY9oRH8y1OwsNnhUk+8U5L/paMz4OQ==}
     cpu: [x86]
     os: [linux]
 
-  sst@3.6.17:
-    resolution: {integrity: sha512-VEhFNns9wZEKymq16hNAk9Q4TbHKv1yZiQtvZKl5PF0ZJ5iaKzz0SR2WDtxKmULz++e0FA/jpm+DgRMs1bchSA==}
+  sst@3.9.7:
+    resolution: {integrity: sha512-j23yu5f8xl1gERIBOA1/HXVYNjaZyO7vAZhhmR6jciRxF6hNWoUHyV7RMqsXaQTzbq6bbd2zs4cP6UrJBaHIzA==}
     hasBin: true
 
   stack-trace@0.0.10:
@@ -13007,9 +13010,9 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hono/node-server@1.13.7(hono@4.6.14)':
+  '@hono/node-server@1.13.8(patch_hash=2hffmhxwhuwlrux4tyfovnllfi)(hono@4.7.2)':
     dependencies:
-      hono: 4.6.14
+      hono: 4.7.2
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -13177,12 +13180,12 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@openauthjs/openauth@0.3.6(arctic@2.3.3)(hono@4.6.14)':
+  '@openauthjs/openauth@0.3.6(arctic@2.3.3)(hono@4.7.2)':
     dependencies:
       '@standard-schema/spec': 1.0.0-beta.3
       arctic: 2.3.3
       aws4fetch: 1.0.20
-      hono: 4.6.14
+      hono: 4.7.2
       jose: 5.9.6
 
   '@oslojs/asn1@1.0.0':
@@ -16039,7 +16042,7 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
-  hono@4.6.14: {}
+  hono@4.7.2: {}
 
   hpack.js@2.1.6:
     dependencies:
@@ -18805,32 +18808,32 @@ snapshots:
 
   srcset@4.0.0: {}
 
-  sst-darwin-arm64@3.6.17:
+  sst-darwin-arm64@3.9.7:
     optional: true
 
-  sst-darwin-x64@3.6.17:
+  sst-darwin-x64@3.9.7:
     optional: true
 
-  sst-linux-arm64@3.6.17:
+  sst-linux-arm64@3.9.7:
     optional: true
 
-  sst-linux-x64@3.6.17:
+  sst-linux-x64@3.9.7:
     optional: true
 
-  sst-linux-x86@3.6.17:
+  sst-linux-x86@3.9.7:
     optional: true
 
-  sst@3.6.17:
+  sst@3.9.7:
     dependencies:
       aws4fetch: 1.0.20
       jose: 5.2.3
       openid-client: 5.6.4
     optionalDependencies:
-      sst-darwin-arm64: 3.6.17
-      sst-darwin-x64: 3.6.17
-      sst-linux-arm64: 3.6.17
-      sst-linux-x64: 3.6.17
-      sst-linux-x86: 3.6.17
+      sst-darwin-arm64: 3.9.7
+      sst-darwin-x64: 3.9.7
+      sst-linux-arm64: 3.9.7
+      sst-linux-x64: 3.9.7
+      sst-linux-x86: 3.9.7
 
   stack-trace@0.0.10: {}
 
