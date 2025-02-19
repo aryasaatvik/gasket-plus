@@ -1,10 +1,11 @@
-import { Plugin } from '@gasket/core';
-import { Hono, Context } from 'hono';
+import type { Plugin } from '@gasket/core';
+import type { Hono, Context } from 'hono';
 import { name, version, description } from '../package.json';
 import startServer from './actions/start-server.js';
-// import type { CORSOptions } from 'hono/cors';
-// TODO: export Options from @hono/node-server
-import { Options } from '@hono/node-server';
+import type { Options } from '@hono/node-server';
+import type { cors } from 'hono/cors';
+
+type CORSOptions = Parameters<typeof cors>[0]
 
 declare module '@gasket/core' {
   export interface GasketConfig {
@@ -12,19 +13,11 @@ declare module '@gasket/core' {
       /** Enable/disable built-in logger middleware */
       logger?: boolean;
       /** CORS configuration options */
-      cors?: {
-        // TODO: export CORSOptions from hono/cors
-        origin: string | string[] | ((origin: string, c: Context) => string | undefined | null);
-        allowMethods?: string[];
-        allowHeaders?: string[];
-        maxAge?: number;
-        credentials?: boolean;
-        exposeHeaders?: string[];
-      };
+      cors?: CORSOptions;
       /** Enable/disable compression middleware */
       compress?: boolean;
       /** Additional Hono configuration options */
-      [key: string]: any;
+      [key: string]: unknown;
     } & Omit<Options, 'fetch'>
   }
   
