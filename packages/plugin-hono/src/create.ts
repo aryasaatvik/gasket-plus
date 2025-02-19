@@ -32,7 +32,7 @@ const create: HookHandler<'create'> = async (gasket, context) => {
     `${generatorDir}/app/plugins/**/${globIgnore}`
   );
 
-  gasketConfig.addPlugin('pluginRoutes', './plugins/routes-plugin' + fileExt);
+  gasketConfig.addPlugin('pluginRoutes', `./plugins/routes-plugin${fileExt}`);
 
   pkg.add('dependencies', {
     'zod': '^3.22.0',
