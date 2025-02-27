@@ -185,24 +185,9 @@ importers:
       '@types/aws-lambda':
         specifier: ^8.10.136
         version: 8.10.147
-      ajv:
-        specifier: ^8.17.1
-        version: 8.17.1
       esbuild:
         specifier: ^0.25.0
         version: 0.25.0
-      react:
-        specifier: ^18.2.0
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.3.1(react@18.3.1)
-      search-insights:
-        specifier: ^2.13.0
-        version: 2.16.3
-      tsx:
-        specifier: ^4.11.0
-        version: 4.19.1
       typescript:
         specifier: ^5.4.5
         version: 5.6.2
