@@ -1,0 +1,37 @@
+{
+  "name": "hono-api-lambda",
+  "version": "0.0.0",
+  "description": "A Gasket app with Hono and AWS Lambda",
+  "scripts": {
+    "docs": "tsx gasket.ts docs",
+    "prebuild": "tsx gasket.ts build",
+    "build": "tsc",
+    "preview": "npm run build && npm run start",
+    "start": "node dist/lambda.js"
+  },
+  "dependencies": {
+    "@gasket/core": "^7.2.0",
+    "@gasket/plugin-command": "^7.2.0",
+    "@gasket/plugin-docs": "^7.2.0",
+    "@gasket/plugin-docusaurus": "^7.2.0",
+    "@gasket/plugin-logger": "^7.2.0",
+    "@gasket/plugin-metadata": "^7.2.0",
+    "@gasket/plugin-swagger": "^7.2.0",
+    "@gasket/plugin-winston": "^7.2.0",
+    "@gasket/utils": "^7.2.0",
+    "gasket-plugin-lambda": "workspace:*",
+    "hono": "^4.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@types/aws-lambda": "^8.10.136",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.4.5"
+  },
+  "type": "module",
+  "eslintIgnore": [
+    "dist"
+  ]
+}

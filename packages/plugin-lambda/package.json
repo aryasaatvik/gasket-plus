@@ -1,0 +1,65 @@
+{
+  "name": "gasket-plugin-lambda",
+  "version": "0.1.0",
+  "description": "Adds AWS Lambda support to your Gasket application",
+  "type": "module",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./*": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "generator",
+    "docs",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aryasaatvik/gasket-plus.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "lambda",
+    "aws",
+    "serverless",
+    "gasket",
+    "plugin"
+  ],
+  "author": {
+    "name": "Saatvik Arya",
+    "email": "aryasaatvik@gmail.com",
+    "url": "https://github.com/aryasaatvik"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aryasaatvik/gasket-plus/issues"
+  },
+  "homepage": "https://github.com/aryasaatvik/gasket-plus/tree/main/packages/plugin-lambda",
+  "dependencies": {
+    "@gasket/plugin-logger": "^7.2.0",
+    "@gasket/plugin-metadata": "^7.2.0"
+  },
+  "devDependencies": {
+    "@gasket/core": "^7.2.0",
+    "create-gasket-app": "^7.2.0",
+    "typescript": "^5.6.2",
+    "@types/aws-lambda": "^8.10.136"
+  },
+  "peerDependencies": {
+    "@gasket/core": "^7.2.0"
+  }
+}

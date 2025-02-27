@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node",
+      "@gasket/core",
+      "gasket-plugin-lambda",
+      "gasket-plugin-hono",
+    ],
+    "baseUrl": "./",
+    "allowJs": true,
+    "strict": false,
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./plugins",
+    "gasket-data.ts",
+    "gasket.ts",
+    "lambda.ts"
+  ]
+}
