@@ -178,6 +178,25 @@ const routesPlugin: Plugin = {
 export default routesPlugin;
 ```
 
+## Type Definitions
+
+To properly support both standard Lambda handlers and Hono's handler, you may need to update your type definitions:
+
+```typescript
+// In your plugin's index.ts
+import type { APIGatewayProxyEvent, APIGatewayProxyEventV2, APIGatewayProxyResult, Context } from 'aws-lambda';
+
+// Define a flexible handler type
+export type LambdaEvent = APIGatewayProxyEvent | APIGatewayProxyEventV2;
+type LambdaHandler = (event: any, context?: any) => Promise<APIGatewayProxyResult>;
+
+// Then use this type in your hook definitions
+```
+
+## Example Project
+
+For a complete example of using this plugin with Hono, see the [hono-api-lambda](https://github.com/aryasaatvik/gasket-plus/tree/main/apps/hono-api-lambda) project.
+
 ## License
 
 [MIT](./LICENSE.md)

@@ -131,4 +131,4 @@ const routesPlugin: Plugin = {
   }
 };
 
-export default routesPlugin; 
+export default routesPlugin;
