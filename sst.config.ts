@@ -14,7 +14,7 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("GasketNextJS", {
+    const nextjs = new sst.aws.Nextjs("GasketNextJS", {
       path: "apps/gasket-nextjs",
       buildCommand: "pnpm run build:open-next",
       domain: {
@@ -34,5 +34,19 @@ export default $config({
         }
       }
     });
+
+    const honoLambda = new sst.aws.Function("GasketHonoLambda", {
+      handler: "apps/hono-api-lambda/lambda.handler",
+      runtime: "nodejs22.x",
+      url: true,
+      environment: {
+        GASKET_ENV: "production",
+      }
+    })
+
+    return {
+      nextjs: $dev ? 'http://localhost:3000' : nextjs.url,
+      honoLambda: honoLambda.url,
+    };
   },
 });

@@ -5,6 +5,11 @@
 
 declare module "sst" {
   export interface Resource {
+    "GasketHonoLambda": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
     "GasketNextJS": {
       "type": "sst.aws.Nextjs"
       "url": string
